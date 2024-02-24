@@ -1,0 +1,119 @@
+/*
+    style.css - this stylesheet is linked from index.html to apply styles to the products home page.
+    Add all of your custom styles here.
+*/
+
+header {
+    text-align: center;
+    background-color: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+nav {
+    background-color: whitesmoke;
+    top: 20px;
+    width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    position: fixed;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li.logout {
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;  
+    color: rgb(163, 117, 32);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(163, 117, 32);
+    bottom: 0;
+    background-color: white;
+}
+
+main {
+    max-height: 80%;
+    overflow: auto;
+    padding: 20px;
+}
+
+#product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: cursive;
+    color:rgb(163, 117, 32)
+}
+
+.product-card {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px white;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.product-details {
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    padding: 10px;
+}
+
+.cart {
+    margin-top: 10px;
+    text-align: end;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
